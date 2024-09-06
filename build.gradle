@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'br.com.totvs'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = '1.8'
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.spring.io/milestone' }
+    maven { url 'https://repo.spring.io/snapshot' }
+}
+
+dependencies {
+    implementation 'org.postgresql:postgresql:42.7.0'
+}
+
